@@ -5,6 +5,7 @@ import SecondStep from './SecondStep'
 import ThirdStep from './ThirdStep'
 import { Stepper, Step, StepLabel } from '@material-ui/core'
 import { multiStepContext } from './StepContext'
+import DisplayData from './DisplayData'
 
 function App() {
 
@@ -37,9 +38,10 @@ function App() {
               <StepLabel></StepLabel>
             </Step>
           </Stepper>
-        </div>
         { showStep(currentStep) }
-        
+        <br />
+        { finalData.length > 0 ? <DisplayData /> : '' }
+        </div>
       </header>
     </div>
   );
