@@ -7,8 +7,8 @@ export default function DisplayData(){
 	return (
 		<Container>
 		<div>
-			<TableContainer style={{display: 'flex', justifyContent:'center'}}>
-				<Table border='1' style={ { width:'100%', justifyContent: 'center' }} size='small' aria-label='caption table' >
+			<TableContainer>
+				<Table border='1'>
 					<TableHead>
 						<TableRow style={{backgroundColor:'burlywood', color:'aliceblue'}}>
 							<TableCell>First Name</TableCell>
